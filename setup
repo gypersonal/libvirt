@@ -1,0 +1,19 @@
+
+https://fedoraproject.org/wiki/Getting_started_with_virtualization
+
+
+su -c "dnf install @virtualization"
+
+su -c "systemctl start libvirtd"
+
+su -c "systemctl enable libvirtd"
+
+lsmod | grep kvm
+
+su -c "virt-manager"
+
+
+https://bbs.archlinux.org/viewtopic.php?id=206206
+systemctl start virtlogd.socket
+
+https://bbs.archlinux.org/viewtopic.php?id=170457
